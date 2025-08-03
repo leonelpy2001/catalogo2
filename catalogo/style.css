@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+main {
+    padding: 15px;
+
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+
+}
+
+main .section-form {
+
+
+    width: 100%;
+
+    margin: auto;
+
+}
+
+main .section-form form {
+    border-radius: 25px;
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+
+    width: 100%;
+
+}
+
+main .section-form form label {
+
+
+
+    font-size: 18px;
+    width: 100%;
+
+}
+
+main .section-form form input {
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 18px 10px;
+}
+
+main .section-form form #nome-produto {
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+
+
+
+}
+
+
+main .section-form form button {
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+
+    min-width: 58px;
+    padding: 10px;
+}
+
+article {
+    border: 1px solid;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 38px;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+article .div-preco-x {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+article .div-preco-x button {
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+
+}

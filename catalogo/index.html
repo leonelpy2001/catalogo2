@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de compras</title>
+</head>
+
+<body>
+
+
+
+    <main>
+        <!-- formulario-->
+        <section class="section-form">
+
+
+
+            <form action="#">
+                <label for="nome-produto">
+                    <input type="text" name="nome-produto" id="nome-produto" placeholder="Nome do produto...">
+                </label>
+                <label for="preco-produto">
+                    <input type="number" name="preco-produto" id="preco-produto" placeholder="preco" required>
+                </label>
+                <button type="submit" class="Enviar">+</button>
+            </form>
+            <div class="div-contador" style="margin: 8px 0; font-size: medium; font-weight: bolder;">
+                itens listados <span class="span-contador"></span>
+            </div>
+        </section>
+
+        <!-- conteudo-->
+        <section class="content">
+            <article>
+                <p class="spannome"></p>
+                <div class="div-preco-x">
+                    <div class="div-preco-kz"><span class="spanpreco"></span>kz
+                    </div>
+                    <button class="Eliminar">Eliminar</button>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
