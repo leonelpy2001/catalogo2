@@ -133,7 +133,6 @@ article .div-preco-x button {
 .div-fundo {
     display: none;
     position: absolute;
-    
     width: 100%;
     height: 100vh;
 
@@ -155,7 +154,6 @@ article .div-preco-x button {
 }
 
 .div-fundo .banner p {
-    text-align: center;
     font-size: large;
     opacity: 0.6;
     margin-bottom: 15px;
@@ -168,9 +166,34 @@ article .div-preco-x button {
     gap: 8px;
 }
 
+
+@media(max-width: 500px) {
+
+
+
+    .div-fundo .banner {
+    top: unset;
+    transform: unset;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    max-width: 100%;
+    bottom: 0;
+   
+    padding:18px;
+}
+    .div-rolo {
+        display: flex;
+        flex-direction: column;
+
+        gap: 8px;
+    }
+}
+
 .btnsim,
 .btncancelar {
-
+    text-align: center;
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -184,51 +207,8 @@ article .div-preco-x button {
 .btnsim {
     border: none;
     width: 100%;
-
+   
 
     color: white;
     background-color: rgb(235, 57, 57);
 }
-
-@media(max-width: 500px) {
-
-
-
-    .div-fundo .banner {
-        top: unset;
-        transform: unset;
-        left: 0;
-        height: 200px;
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        max-width: 100%;
-        bottom: 0;
-
-        padding: 18px;
-    }
-
-    .div-rolo {
-        display: flex;
-        flex-direction: column;
-
-        gap: 8px;
-    }
-
-
-
-    .btncancelar {
-
-        font-weight: bold;
-        cursor: pointer;
-        border: none;
-        width: 100%;
-        padding: 15px 30px;
-        border-radius: 20px;
-        color: rgb(0, 29, 192);
-        background-color: rgb(255, 255, 255);
-    }
-
-}
-
-
-
