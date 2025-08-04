@@ -69,9 +69,8 @@ function adicionarCliente(e) {
     };
 }
 
-
-
 function listarClientes() {
+    let banner = document.querySelector(".div-rolo")
     const lista = document.querySelector(".content");
     const spanContador = document.querySelector(".span-contador");
     lista.innerHTML = ""; // Limpa conteúdo anterior
@@ -86,6 +85,7 @@ function listarClientes() {
 
         if (cursor) {
             const item = cursor.value;
+            const idParaDeletar = cursor.key; // Captura o ID
 
             // Criar elementos dinamicamente
             const article = document.createElement("article");
@@ -104,11 +104,11 @@ function listarClientes() {
             const btnEliminar = document.createElement("button");
             btnEliminar.className = "Eliminar";
             btnEliminar.textContent = "Eliminar";
-            btnEliminar.onclick = () => deletarItem(cursor.key);
 
-            const idParaDeletar = cursor.key;
-            btnEliminar.onclick = () => deletarItem(idParaDeletar);
-
+            // Quando clica, chama a tela de confirmação e guarda o ID a ser deletado
+            btnEliminar.onclick = () => {
+                chamarTela(idParaDeletar);
+            };
 
             divPrecoX.appendChild(divPrecoKz);
             divPrecoX.appendChild(btnEliminar);
@@ -123,6 +123,36 @@ function listarClientes() {
         }
     };
 }
+
+
+function chamarTela(id) {
+    let tela = document.querySelector(".div-fundo");
+    let btnSim = document.querySelector(".btnsim");
+    let btnCancelar = document.querySelector(".btncancelar");
+
+    // Mostrar tela de confirmação
+    tela.style.display = "block";
+
+    // Clicar em "Cancelar"
+    btnCancelar.onclick = function () {
+        tela.style.display = "none";
+    };
+
+    // Clicar em "Sim"
+    btnSim.onclick = function () {
+        deletarItem(id);
+        tela.style.display = "none";
+    };
+}
+
+
+
+
+
+
+
+
+
 
 function deletarItem(id) {
     const transaction = db.transaction(["compras"], "readwrite");
