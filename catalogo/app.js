@@ -1,17 +1,6 @@
 let inputNomeProduto = document.querySelector("#nome-produto")
 let inputPreco = document.querySelector("#preco-produto")
 
-
-
-
-
-
-
-
-
-
-
-
 // integaracao ao banco de dados
 
 let db

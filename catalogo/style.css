@@ -28,11 +28,23 @@ main .section-form form {
     border-radius: 25px;
     background-color: rgb(222, 222, 222);
     padding: 10px;
-    display: flex;
-    gap: 5px;
+    display:flex;
+    gap: 10px;
 
     width: 100%;
 
+}
+@media (max-width: 500px){
+    main .section-form form {
+    border-radius: 25px;
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    display:grid;
+    gap: 10px;
+
+    width: 100%;
+
+}
 }
 
 main .section-form form label {
@@ -69,7 +81,7 @@ main .section-form form button {
     background-color: blue;
     color: white;
     border-radius: 30px;
-
+font-size: larger;
     min-width: 58px;
     padding: 10px;
 }
