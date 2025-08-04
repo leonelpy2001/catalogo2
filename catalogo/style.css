@@ -35,6 +35,15 @@ main .section-form form {
 
 }
 @media (max-width: 500px){
+
+    main {
+    padding: 15px;
+
+    width: 100%;
+    max-width: 700px;
+    margin: 15px auto;
+
+}
     main .section-form form {
     border-radius: 25px;
     background-color: rgb(222, 222, 222);
